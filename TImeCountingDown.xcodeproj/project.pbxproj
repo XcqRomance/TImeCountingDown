@@ -12,6 +12,8 @@
 		355ADD7F1D923B9E000CA259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355ADD7D1D923B9E000CA259 /* Main.storyboard */; };
 		355ADD811D923B9E000CA259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355ADD801D923B9E000CA259 /* Assets.xcassets */; };
 		355ADD841D923B9E000CA259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355ADD821D923B9E000CA259 /* LaunchScreen.storyboard */; };
+		355ADD8D1D923C14000CA259 /* TimeCountDownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355ADD8B1D923C14000CA259 /* TimeCountDownManager.swift */; };
+		355ADD901D924342000CA259 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355ADD8F1D924342000CA259 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		355ADD801D923B9E000CA259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355ADD831D923B9E000CA259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		355ADD851D923B9E000CA259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		355ADD8B1D923C14000CA259 /* TimeCountDownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCountDownManager.swift; sourceTree = "<group>"; };
+		355ADD8F1D924342000CA259 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				355ADD791D923B9E000CA259 /* AppDelegate.swift */,
 				355ADD7B1D923B9E000CA259 /* ViewController.swift */,
+				355ADD8F1D924342000CA259 /* TestViewController.swift */,
+				355ADD8B1D923C14000CA259 /* TimeCountDownManager.swift */,
 				355ADD7D1D923B9E000CA259 /* Main.storyboard */,
 				355ADD801D923B9E000CA259 /* Assets.xcassets */,
 				355ADD821D923B9E000CA259 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				355ADD7C1D923B9E000CA259 /* ViewController.swift in Sources */,
 				355ADD7A1D923B9E000CA259 /* AppDelegate.swift in Sources */,
+				355ADD901D924342000CA259 /* TestViewController.swift in Sources */,
+				355ADD8D1D923C14000CA259 /* TimeCountDownManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TImeCountingDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XcRomance.TImeCountingDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -263,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TImeCountingDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XcRomance.TImeCountingDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
