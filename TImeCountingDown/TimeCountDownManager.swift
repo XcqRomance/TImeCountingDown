@@ -16,10 +16,10 @@ class TimeCountDownManager: NSObject {
         return shareInstance
     }
     
-    var pool: NSOperationQueue
+    var pool: OperationQueue
     
     override init() {
-        pool = NSOperationQueue()
+        pool = OperationQueue()
         super.init()
     }
     
@@ -31,14 +31,14 @@ class TimeCountDownManager: NSObject {
      *  @param countingDown 倒计时时，会多次回调，提供当前秒数
      *  @param finished     倒计时结束时调用，提供当前秒数，值恒为 0
      */
-    func scheduledCountDownWith(key: String, timeInteval: NSTimeInterval, countingDown:TimeCountingDownTaskBlock?,finished:TimeCountingDownTaskBlock?) {
+    func scheduledCountDownWith(_ key: String, timeInteval: TimeInterval, countingDown:TimeCountingDownTaskBlock?,finished:TimeCountingDownTaskBlock?) {
 
         var task: TimeCountDownTask?
         if coundownTaskExistWith(key, task: &task) {
             task?.countingDownBlcok = countingDown
             task?.finishedBlcok = finished
             if countingDown != nil {
-                countingDown!(timeInterval: (task?.leftTimeInterval)!)
+                countingDown!((task?.leftTimeInterval)!)
             }
         } else {
             task = TimeCountDownTask()
@@ -59,10 +59,10 @@ class TimeCountDownManager: NSObject {
      *  @param task 任务
      *  @return YES - 存在， NO - 不存在
      */
-    private func coundownTaskExistWith(key: String,inout task: TimeCountDownTask? ) -> Bool {
+    fileprivate func coundownTaskExistWith(_ key: String,task: inout TimeCountDownTask? ) -> Bool {
         var taskExits = false
         
-        for (_, obj)  in pool.operations.enumerate() {
+        for (_, obj)  in pool.operations.enumerated() {
             
             let temptask = obj as! TimeCountDownTask
             if temptask.name == key {
@@ -81,18 +81,18 @@ class TimeCountDownManager: NSObject {
     }
     
     func suspendAllTask() {
-        pool.suspended = true
+        pool.isSuspended = true
     }
 }
 
 /// 计时中回调
-typealias TimeCountingDownTaskBlock = (timeInterval: NSTimeInterval) -> Void
+typealias TimeCountingDownTaskBlock = (_ timeInterval: TimeInterval) -> Void
 // 计时结束后回调
-typealias TimeFinishedBlock = (timeInterval: NSTimeInterval) -> Void
+typealias TimeFinishedBlock = (_ timeInterval: TimeInterval) -> Void
 
-class TimeCountDownTask: NSOperation {
+class TimeCountDownTask: Operation {
     var taskIdentifier: UIBackgroundTaskIdentifier = -1
-    var leftTimeInterval: NSTimeInterval = 0
+    var leftTimeInterval: TimeInterval = 0
     var countingDownBlcok: TimeCountingDownTaskBlock?
     var finishedBlcok: TimeFinishedBlock?
     
@@ -100,37 +100,37 @@ class TimeCountDownTask: NSOperation {
     
     override func main() {
         
-        if self.cancelled {
+        if self.isCancelled {
             return
         }
-        taskIdentifier = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler(nil)
+        taskIdentifier = UIApplication.shared.beginBackgroundTask(expirationHandler: nil)
         
         while leftTimeInterval > 0 {
             print("----\(leftTimeInterval)")
-            print(self.executing)
-            if self.cancelled {
+            print(self.isExecuting)
+            if self.isCancelled {
                 return
             }
             leftTimeInterval -= 1
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async(execute: {
                 if self.countingDownBlcok != nil {
-                    self.countingDownBlcok!(timeInterval: self.leftTimeInterval)
+                    self.countingDownBlcok!(self.leftTimeInterval)
                 }
             })
-            NSThread.sleepForTimeInterval(1)
+            Thread.sleep(forTimeInterval: 1)
         }
         
-        dispatch_async(dispatch_get_main_queue()) {
-            if self.cancelled {
+        DispatchQueue.main.async {
+            if self.isCancelled {
                 return
             }
             if self.finishedBlcok != nil {
-                self.finishedBlcok!(timeInterval: 0)
+                self.finishedBlcok!(0)
             }
         }
         
         if taskIdentifier != UIBackgroundTaskInvalid {
-            UIApplication.sharedApplication().endBackgroundTask(taskIdentifier)
+            UIApplication.shared.endBackgroundTask(taskIdentifier)
             taskIdentifier = UIBackgroundTaskInvalid
         }
     }
