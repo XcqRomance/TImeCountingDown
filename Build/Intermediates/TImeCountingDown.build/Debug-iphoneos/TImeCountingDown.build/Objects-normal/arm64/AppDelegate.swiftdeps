@@ -6,23 +6,22 @@ provides-nominal:
 provides-member:
 - ["C16TImeCountingDown11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
 - "application"
-- "applicationDidEnterBackground"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "window"
 - "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "window"
 depends-top-level:
 - "AppDelegate"
 - "Bool"
-- "UIWindow"
-- "UIApplication"
-- "UIResponder"
 - !private "BooleanLiteralType"
+- "UIApplication"
 - "UIApplicationDelegate"
-- "AnyObject"
-- "NSObject"
+- "UIApplicationLaunchOptionsKey"
+- "UIResponder"
+- "UIWindow"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -36,13 +35,12 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
-- ["C16TImeCountingDown11AppDelegate", "AnyObject"]
 - ["C16TImeCountingDown11AppDelegate", "Bool"]
-- ["C16TImeCountingDown11AppDelegate", "NSObject"]
 - ["C16TImeCountingDown11AppDelegate", "UIApplication"]
+- ["C16TImeCountingDown11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C16TImeCountingDown11AppDelegate", "UIWindow"]
 - ["C16TImeCountingDown11AppDelegate", "application"]
 - ["C16TImeCountingDown11AppDelegate", "applicationDidBecomeActive"]
@@ -59,21 +57,21 @@ depends-member:
 - ["C16TImeCountingDown11AppDelegate", "deinit"]
 - ["C16TImeCountingDown11AppDelegate", "init"]
 - ["C16TImeCountingDown11AppDelegate", "window"]
-- ["Ps11CVarArgType", "application"]
-- ["Ps11CVarArgType", "applicationDidBecomeActive"]
-- ["Ps11CVarArgType", "applicationDidEnterBackground"]
-- ["Ps11CVarArgType", "applicationDidFinishLaunching"]
-- ["Ps11CVarArgType", "applicationDidReceiveMemoryWarning"]
-- ["Ps11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps11CVarArgType", "applicationShouldRequestHealthAuthorization"]
-- ["Ps11CVarArgType", "applicationSignificantTimeChange"]
-- ["Ps11CVarArgType", "applicationWillEnterForeground"]
-- ["Ps11CVarArgType", "applicationWillResignActive"]
-- ["Ps11CVarArgType", "applicationWillTerminate"]
-- ["Ps11CVarArgType", "init"]
-- ["Ps11CVarArgType", "window"]
-- ["Ps11CVarArgType", ""]
+- ["Ps7CVarArg", "application"]
+- ["Ps7CVarArg", "applicationDidBecomeActive"]
+- ["Ps7CVarArg", "applicationDidEnterBackground"]
+- ["Ps7CVarArg", "applicationDidFinishLaunching"]
+- ["Ps7CVarArg", "applicationDidReceiveMemoryWarning"]
+- ["Ps7CVarArg", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps7CVarArg", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps7CVarArg", "applicationShouldRequestHealthAuthorization"]
+- ["Ps7CVarArg", "applicationSignificantTimeChange"]
+- ["Ps7CVarArg", "applicationWillEnterForeground"]
+- ["Ps7CVarArg", "applicationWillResignActive"]
+- ["Ps7CVarArg", "applicationWillTerminate"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "window"]
+- ["Ps7CVarArg", ""]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -86,7 +84,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "application"]
@@ -101,7 +99,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "application"]
@@ -116,7 +114,7 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
-- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - ["Ps8Hashable", "application"]
@@ -131,13 +129,12 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
-- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
@@ -165,7 +162,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo21UIApplicationDelegate", "application"]
@@ -182,10 +179,9 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
-- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -202,10 +198,40 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- ["PSo30UIResponderStandardEditActions", "application"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidFinishLaunching"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationShouldRequestHealthAuthorization"]
+- ["PSo30UIResponderStandardEditActions", "applicationSignificantTimeChange"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillEnterForeground"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "window"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["Ps9_Hashable", "application"]
+- ["Ps9_Hashable", "applicationDidBecomeActive"]
+- ["Ps9_Hashable", "applicationDidEnterBackground"]
+- ["Ps9_Hashable", "applicationDidFinishLaunching"]
+- ["Ps9_Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9_Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9_Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9_Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9_Hashable", "applicationSignificantTimeChange"]
+- ["Ps9_Hashable", "applicationWillEnterForeground"]
+- ["Ps9_Hashable", "applicationWillResignActive"]
+- ["Ps9_Hashable", "applicationWillTerminate"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "window"]
+- ["Ps9_Hashable", ""]
 depends-nominal:
 - "Ps9AnyObject"
 - "C16TImeCountingDown11AppDelegate"
-- "Ps11CVarArgType"
+- "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
@@ -214,14 +240,25 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "Ps9_Hashable"
 depends-dynamic-lookup:
 depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "b306772a10463f7c5fce689aa6452f8e"

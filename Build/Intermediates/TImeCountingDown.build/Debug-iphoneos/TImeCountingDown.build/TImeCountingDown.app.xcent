@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>5CC4VW7238.XcRomance.TImeCountingDown</string>
+	<string>RYA847UAJJ.XcRomance.TImeCountingDown</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>5CC4VW7238</string>
+	<string>RYA847UAJJ</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>5CC4VW7238.XcRomance.TImeCountingDown</string>
+		<string>RYA847UAJJ.XcRomance.TImeCountingDown</string>
 	</array>
 </dict>
 </plist>

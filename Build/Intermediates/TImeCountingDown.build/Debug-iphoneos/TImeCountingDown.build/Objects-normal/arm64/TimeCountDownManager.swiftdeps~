@@ -1,0 +1,537 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TimeCountDownManager"
+- "TimeCountingDownTaskBlock"
+- "TimeFinishedBlock"
+- "TimeCountDownTask"
+provides-nominal:
+- "C16TImeCountingDown20TimeCountDownManager"
+- "C16TImeCountingDown17TimeCountDownTask"
+provides-member:
+- ["C16TImeCountingDown20TimeCountDownManager", ""]
+- ["C16TImeCountingDown17TimeCountDownTask", ""]
+provides-dynamic-lookup:
+- "cancelAllTask"
+- "countingDownBlcok"
+- "finishedBlcok"
+- "leftTimeInterval"
+- "main"
+- "pool"
+- "scheduledCountDownWith"
+- "sharedInstance"
+- "suspendAllTask"
+- "taskIdentifier"
+depends-top-level:
+- !private "!="
+- !private "-="
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- !private "CastingPrecedence"
+- !private "DispatchQueue"
+- "NSObject"
+- "Operation"
+- "OperationQueue"
+- "String"
+- !private "StringLiteralType"
+- !private "Thread"
+- "TimeCountDownManager"
+- "TimeCountDownTask"
+- "TimeCountingDownTaskBlock"
+- "TimeFinishedBlock"
+- "TimeInterval"
+- !private "UIApplication"
+- "UIBackgroundTaskIdentifier"
+- !private "UIBackgroundTaskInvalid"
+- "Void"
+- !private "print"
+- !private "shareInstance"
+depends-member:
+- !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "OperationQueue"]
+- !private ["Ps9AnyObject", "Thread"]
+- !private ["Ps9AnyObject", "TimeCountDownTask"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "UIBackgroundTaskInvalid"]
+- !private ["Ps9AnyObject", "addOperation"]
+- !private ["Ps9AnyObject", "async"]
+- !private ["Ps9AnyObject", "beginBackgroundTask"]
+- !private ["Ps9AnyObject", "cancelAllOperations"]
+- !private ["Ps9AnyObject", "coundownTaskExistWith"]
+- !private ["Ps9AnyObject", "countingDownBlcok"]
+- !private ["Ps9AnyObject", "endBackgroundTask"]
+- !private ["Ps9AnyObject", "finishedBlcok"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isCancelled"]
+- !private ["Ps9AnyObject", "isExecuting"]
+- !private ["Ps9AnyObject", "isSuspended"]
+- !private ["Ps9AnyObject", "leftTimeInterval"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "operations"]
+- !private ["Ps9AnyObject", "pool"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "shareInstance"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "sleep"]
+- !private ["Ps9AnyObject", "taskIdentifier"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "enumerated"]
+- !private ["Ps23BidirectionalCollection", "enumerated"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "DispatchQueue"]
+- !private ["Ps7CVarArg", "OperationQueue"]
+- !private ["Ps7CVarArg", "Thread"]
+- !private ["Ps7CVarArg", "TimeCountDownTask"]
+- !private ["Ps7CVarArg", "UIApplication"]
+- !private ["Ps7CVarArg", "UIBackgroundTaskInvalid"]
+- !private ["Ps7CVarArg", "addOperation"]
+- !private ["Ps7CVarArg", "async"]
+- !private ["Ps7CVarArg", "beginBackgroundTask"]
+- !private ["Ps7CVarArg", "cancelAllOperations"]
+- !private ["Ps7CVarArg", "coundownTaskExistWith"]
+- !private ["Ps7CVarArg", "countingDownBlcok"]
+- !private ["Ps7CVarArg", "endBackgroundTask"]
+- !private ["Ps7CVarArg", "enumerated"]
+- !private ["Ps7CVarArg", "finishedBlcok"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isCancelled"]
+- !private ["Ps7CVarArg", "isExecuting"]
+- !private ["Ps7CVarArg", "isSuspended"]
+- !private ["Ps7CVarArg", "leftTimeInterval"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "name"]
+- !private ["Ps7CVarArg", "operations"]
+- !private ["Ps7CVarArg", "pool"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "shareInstance"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "sleep"]
+- !private ["Ps7CVarArg", "taskIdentifier"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "enumerated"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "OperationQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "Thread"]
+- !private ["Ps28CustomDebugStringConvertible", "TimeCountDownTask"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBackgroundTaskInvalid"]
+- !private ["Ps28CustomDebugStringConvertible", "addOperation"]
+- !private ["Ps28CustomDebugStringConvertible", "async"]
+- !private ["Ps28CustomDebugStringConvertible", "beginBackgroundTask"]
+- !private ["Ps28CustomDebugStringConvertible", "cancelAllOperations"]
+- !private ["Ps28CustomDebugStringConvertible", "coundownTaskExistWith"]
+- !private ["Ps28CustomDebugStringConvertible", "countingDownBlcok"]
+- !private ["Ps28CustomDebugStringConvertible", "endBackgroundTask"]
+- !private ["Ps28CustomDebugStringConvertible", "enumerated"]
+- !private ["Ps28CustomDebugStringConvertible", "finishedBlcok"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isCancelled"]
+- !private ["Ps28CustomDebugStringConvertible", "isExecuting"]
+- !private ["Ps28CustomDebugStringConvertible", "isSuspended"]
+- !private ["Ps28CustomDebugStringConvertible", "leftTimeInterval"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "operations"]
+- !private ["Ps28CustomDebugStringConvertible", "pool"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "shareInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "sleep"]
+- !private ["Ps28CustomDebugStringConvertible", "taskIdentifier"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "enumerated"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "DispatchQueue"]
+- !private ["Ps23CustomStringConvertible", "OperationQueue"]
+- !private ["Ps23CustomStringConvertible", "Thread"]
+- !private ["Ps23CustomStringConvertible", "TimeCountDownTask"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "UIBackgroundTaskInvalid"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addOperation"]
+- !private ["Ps23CustomStringConvertible", "async"]
+- !private ["Ps23CustomStringConvertible", "beginBackgroundTask"]
+- !private ["Ps23CustomStringConvertible", "cancelAllOperations"]
+- !private ["Ps23CustomStringConvertible", "coundownTaskExistWith"]
+- !private ["Ps23CustomStringConvertible", "countingDownBlcok"]
+- !private ["Ps23CustomStringConvertible", "endBackgroundTask"]
+- !private ["Ps23CustomStringConvertible", "enumerated"]
+- !private ["Ps23CustomStringConvertible", "finishedBlcok"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isCancelled"]
+- !private ["Ps23CustomStringConvertible", "isExecuting"]
+- !private ["Ps23CustomStringConvertible", "isSuspended"]
+- !private ["Ps23CustomStringConvertible", "leftTimeInterval"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "operations"]
+- !private ["Ps23CustomStringConvertible", "pool"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "shareInstance"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "sleep"]
+- !private ["Ps23CustomStringConvertible", "taskIdentifier"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["CSo14DispatchObject", "async"]
+- !private ["CSo14DispatchObject", "main"]
+- !private ["CSo13DispatchQueue", "async"]
+- !private ["CSo13DispatchQueue", "main"]
+- !private ["Ps9Equatable", "DispatchQueue"]
+- !private ["Ps9Equatable", "OperationQueue"]
+- !private ["Ps9Equatable", "Thread"]
+- !private ["Ps9Equatable", "TimeCountDownTask"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "UIBackgroundTaskInvalid"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addOperation"]
+- !private ["Ps9Equatable", "async"]
+- !private ["Ps9Equatable", "beginBackgroundTask"]
+- !private ["Ps9Equatable", "cancelAllOperations"]
+- !private ["Ps9Equatable", "coundownTaskExistWith"]
+- !private ["Ps9Equatable", "countingDownBlcok"]
+- !private ["Ps9Equatable", "endBackgroundTask"]
+- !private ["Ps9Equatable", "finishedBlcok"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isCancelled"]
+- !private ["Ps9Equatable", "isExecuting"]
+- !private ["Ps9Equatable", "isSuspended"]
+- !private ["Ps9Equatable", "leftTimeInterval"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "operations"]
+- !private ["Ps9Equatable", "pool"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "shareInstance"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "sleep"]
+- !private ["Ps9Equatable", "taskIdentifier"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "enumerated"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "DispatchQueue"]
+- !private ["Ps8Hashable", "OperationQueue"]
+- !private ["Ps8Hashable", "Thread"]
+- !private ["Ps8Hashable", "TimeCountDownTask"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "UIBackgroundTaskInvalid"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addOperation"]
+- !private ["Ps8Hashable", "async"]
+- !private ["Ps8Hashable", "beginBackgroundTask"]
+- !private ["Ps8Hashable", "cancelAllOperations"]
+- !private ["Ps8Hashable", "coundownTaskExistWith"]
+- !private ["Ps8Hashable", "countingDownBlcok"]
+- !private ["Ps8Hashable", "endBackgroundTask"]
+- !private ["Ps8Hashable", "finishedBlcok"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isCancelled"]
+- !private ["Ps8Hashable", "isExecuting"]
+- !private ["Ps8Hashable", "isSuspended"]
+- !private ["Ps8Hashable", "leftTimeInterval"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "operations"]
+- !private ["Ps8Hashable", "pool"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "shareInstance"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "sleep"]
+- !private ["Ps8Hashable", "taskIdentifier"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "enumerated"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "DispatchQueue"]
+- ["CSo8NSObject", "OperationQueue"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "Thread"]
+- ["CSo8NSObject", "TimeCountDownManager"]
+- !private ["CSo8NSObject", "TimeCountDownTask"]
+- ["CSo8NSObject", "TimeCountingDownTaskBlock"]
+- ["CSo8NSObject", "TimeFinishedBlock"]
+- ["CSo8NSObject", "TimeInterval"]
+- !private ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIBackgroundTaskIdentifier"]
+- !private ["CSo8NSObject", "UIBackgroundTaskInvalid"]
+- !private ["CSo8NSObject", "addOperation"]
+- !private ["CSo8NSObject", "async"]
+- !private ["CSo8NSObject", "beginBackgroundTask"]
+- !private ["CSo8NSObject", "cancelAllOperations"]
+- ["CSo8NSObject", "cancelAllTask"]
+- ["CSo8NSObject", "coundownTaskExistWith"]
+- ["CSo8NSObject", "countingDownBlcok"]
+- !private ["CSo8NSObject", "endBackgroundTask"]
+- ["CSo8NSObject", "finishedBlcok"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isCancelled"]
+- !private ["CSo8NSObject", "isExecuting"]
+- !private ["CSo8NSObject", "isSuspended"]
+- ["CSo8NSObject", "leftTimeInterval"]
+- ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "operations"]
+- ["CSo8NSObject", "pool"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "scheduledCountDownWith"]
+- !private ["CSo8NSObject", "shareInstance"]
+- !private ["CSo8NSObject", "shared"]
+- ["CSo8NSObject", "sharedInstance"]
+- !private ["CSo8NSObject", "sleep"]
+- ["CSo8NSObject", "suspendAllTask"]
+- ["CSo8NSObject", "taskIdentifier"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "OperationQueue"]
+- !private ["PSo16NSObjectProtocol", "Thread"]
+- !private ["PSo16NSObjectProtocol", "TimeCountDownTask"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UIBackgroundTaskInvalid"]
+- !private ["PSo16NSObjectProtocol", "addOperation"]
+- !private ["PSo16NSObjectProtocol", "async"]
+- !private ["PSo16NSObjectProtocol", "beginBackgroundTask"]
+- !private ["PSo16NSObjectProtocol", "cancelAllOperations"]
+- !private ["PSo16NSObjectProtocol", "coundownTaskExistWith"]
+- !private ["PSo16NSObjectProtocol", "countingDownBlcok"]
+- !private ["PSo16NSObjectProtocol", "endBackgroundTask"]
+- !private ["PSo16NSObjectProtocol", "finishedBlcok"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isCancelled"]
+- !private ["PSo16NSObjectProtocol", "isExecuting"]
+- !private ["PSo16NSObjectProtocol", "isSuspended"]
+- !private ["PSo16NSObjectProtocol", "leftTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "operations"]
+- !private ["PSo16NSObjectProtocol", "pool"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "shareInstance"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "sleep"]
+- !private ["PSo16NSObjectProtocol", "taskIdentifier"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo9OS_object", "async"]
+- !private ["CSo9OS_object", "main"]
+- !private ["CSo9Operation", "DispatchQueue"]
+- !private ["CSo9Operation", "Thread"]
+- ["CSo9Operation", "TimeCountingDownTaskBlock"]
+- ["CSo9Operation", "TimeFinishedBlock"]
+- ["CSo9Operation", "TimeInterval"]
+- !private ["CSo9Operation", "UIApplication"]
+- ["CSo9Operation", "UIBackgroundTaskIdentifier"]
+- !private ["CSo9Operation", "UIBackgroundTaskInvalid"]
+- ["CSo9Operation", "countingDownBlcok"]
+- ["CSo9Operation", "finishedBlcok"]
+- ["CSo9Operation", "init"]
+- !private ["CSo9Operation", "isCancelled"]
+- !private ["CSo9Operation", "isExecuting"]
+- ["CSo9Operation", "leftTimeInterval"]
+- ["CSo9Operation", "main"]
+- !private ["CSo9Operation", "name"]
+- !private ["CSo9Operation", "print"]
+- ["CSo9Operation", "taskIdentifier"]
+- ["CSo9Operation", ""]
+- !private ["CSo14OperationQueue", "addOperation"]
+- !private ["CSo14OperationQueue", "cancelAllOperations"]
+- !private ["CSo14OperationQueue", "init"]
+- !private ["CSo14OperationQueue", "isSuspended"]
+- !private ["CSo14OperationQueue", "operations"]
+- !private ["Ps22RandomAccessCollection", "enumerated"]
+- !private ["Ps26RangeReplaceableCollection", "enumerated"]
+- !private ["Ps8Sequence", "enumerated"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["CSo6Thread", "sleep"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "Bool"]
+- ["C16TImeCountingDown20TimeCountDownManager", "OperationQueue"]
+- ["C16TImeCountingDown20TimeCountDownManager", "String"]
+- ["C16TImeCountingDown20TimeCountDownManager", "TimeCountDownManager"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "TimeCountDownTask"]
+- ["C16TImeCountingDown20TimeCountDownManager", "TimeCountingDownTaskBlock"]
+- ["C16TImeCountingDown20TimeCountDownManager", "TimeInterval"]
+- ["C16TImeCountingDown20TimeCountDownManager", "cancelAllTask"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "coundownTaskExistWith"]
+- ["C16TImeCountingDown20TimeCountDownManager", "deinit"]
+- ["C16TImeCountingDown20TimeCountDownManager", "init"]
+- ["C16TImeCountingDown20TimeCountDownManager", "pool"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "print"]
+- ["C16TImeCountingDown20TimeCountDownManager", "scheduledCountDownWith"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "shareInstance"]
+- ["C16TImeCountingDown20TimeCountDownManager", "sharedInstance"]
+- ["C16TImeCountingDown20TimeCountDownManager", "suspendAllTask"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "DispatchQueue"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "Thread"]
+- ["C16TImeCountingDown17TimeCountDownTask", "TimeCountingDownTaskBlock"]
+- ["C16TImeCountingDown17TimeCountDownTask", "TimeFinishedBlock"]
+- ["C16TImeCountingDown17TimeCountDownTask", "TimeInterval"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "UIApplication"]
+- ["C16TImeCountingDown17TimeCountDownTask", "UIBackgroundTaskIdentifier"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "UIBackgroundTaskInvalid"]
+- ["C16TImeCountingDown17TimeCountDownTask", "countingDownBlcok"]
+- ["C16TImeCountingDown17TimeCountDownTask", "deinit"]
+- ["C16TImeCountingDown17TimeCountDownTask", "finishedBlcok"]
+- ["C16TImeCountingDown17TimeCountDownTask", "init"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "isCancelled"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "isExecuting"]
+- ["C16TImeCountingDown17TimeCountDownTask", "leftTimeInterval"]
+- ["C16TImeCountingDown17TimeCountDownTask", "main"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "name"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "print"]
+- ["C16TImeCountingDown17TimeCountDownTask", "taskIdentifier"]
+- !private ["CSo13UIApplication", "beginBackgroundTask"]
+- !private ["CSo13UIApplication", "endBackgroundTask"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["CSo11UIResponder", "beginBackgroundTask"]
+- !private ["CSo11UIResponder", "endBackgroundTask"]
+- !private ["CSo11UIResponder", "shared"]
+- !private ["PSo30UIResponderStandardEditActions", "beginBackgroundTask"]
+- !private ["PSo30UIResponderStandardEditActions", "endBackgroundTask"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- !private ["Ps14_ArrayProtocol", "enumerated"]
+- !private ["Ps23_BidirectionalIndexable", "enumerated"]
+- !private ["Ps24_DestructorSafeContainer", "enumerated"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "DispatchQueue"]
+- !private ["Ps9_Hashable", "OperationQueue"]
+- !private ["Ps9_Hashable", "Thread"]
+- !private ["Ps9_Hashable", "TimeCountDownTask"]
+- !private ["Ps9_Hashable", "UIApplication"]
+- !private ["Ps9_Hashable", "UIBackgroundTaskInvalid"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addOperation"]
+- !private ["Ps9_Hashable", "async"]
+- !private ["Ps9_Hashable", "beginBackgroundTask"]
+- !private ["Ps9_Hashable", "cancelAllOperations"]
+- !private ["Ps9_Hashable", "coundownTaskExistWith"]
+- !private ["Ps9_Hashable", "countingDownBlcok"]
+- !private ["Ps9_Hashable", "endBackgroundTask"]
+- !private ["Ps9_Hashable", "finishedBlcok"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isCancelled"]
+- !private ["Ps9_Hashable", "isExecuting"]
+- !private ["Ps9_Hashable", "isSuspended"]
+- !private ["Ps9_Hashable", "leftTimeInterval"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "operations"]
+- !private ["Ps9_Hashable", "pool"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "shareInstance"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "sleep"]
+- !private ["Ps9_Hashable", "taskIdentifier"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "enumerated"]
+- !private ["Ps14_IndexableBase", "enumerated"]
+- !private ["Ps17_MutableIndexable", "enumerated"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "enumerated"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "enumerated"]
+- !private ["Ps26_RangeReplaceableIndexable", "enumerated"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "CSo14DispatchObject"
+- !private "CSo13DispatchQueue"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo9OS_object"
+- "CSo9Operation"
+- !private "CSo14OperationQueue"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps8Sequence"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "CSo6Thread"
+- "C16TImeCountingDown20TimeCountDownManager"
+- "C16TImeCountingDown17TimeCountDownTask"
+- !private "CSo13UIApplication"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "61918d0c2cba3cb7d5a5b11d8dda1604"

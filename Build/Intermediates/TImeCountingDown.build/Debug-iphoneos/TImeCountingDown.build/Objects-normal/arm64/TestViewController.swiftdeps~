@@ -1,0 +1,456 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TestViewController"
+provides-nominal:
+- "C16TImeCountingDown18TestViewController"
+provides-member:
+- ["C16TImeCountingDown18TestViewController", ""]
+provides-dynamic-lookup:
+- "continueTIme"
+- "countDown"
+- "countDown2"
+- "didReceiveMemoryWarning"
+- "pause"
+- "stop"
+- "timecountDown"
+- "viewDidLoad"
+depends-top-level:
+- "AnyObject"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- !private "Int"
+- !private "StringLiteralType"
+- "TestViewController"
+- !private "TimeCountDownManager"
+- "UIButton"
+- "UIViewController"
+- "UnicodeScalarType"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "TimeCountDownManager"]
+- !private ["Ps9AnyObject", "cancelAllTask"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isEnabled"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "scheduledCountDownWith"]
+- !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "suspendAllTask"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "timecountDown"]
+- !private ["Ps9AnyObject", "titleLabel"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["PSo15CALayerDelegate", "isEnabled"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "titleLabel"]
+- !private ["Ps7CVarArg", "Int"]
+- !private ["Ps7CVarArg", "TimeCountDownManager"]
+- !private ["Ps7CVarArg", "cancelAllTask"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isEnabled"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "scheduledCountDownWith"]
+- !private ["Ps7CVarArg", "sharedInstance"]
+- !private ["Ps7CVarArg", "suspendAllTask"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "timecountDown"]
+- !private ["Ps7CVarArg", "titleLabel"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- !private ["Ps28CustomDebugStringConvertible", "TimeCountDownManager"]
+- !private ["Ps28CustomDebugStringConvertible", "cancelAllTask"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledCountDownWith"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "suspendAllTask"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "timecountDown"]
+- !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "TimeCountDownManager"]
+- !private ["Ps23CustomStringConvertible", "cancelAllTask"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEnabled"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "scheduledCountDownWith"]
+- !private ["Ps23CustomStringConvertible", "sharedInstance"]
+- !private ["Ps23CustomStringConvertible", "suspendAllTask"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "timecountDown"]
+- !private ["Ps23CustomStringConvertible", "titleLabel"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "TimeCountDownManager"]
+- !private ["Ps9Equatable", "cancelAllTask"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isEnabled"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "scheduledCountDownWith"]
+- !private ["Ps9Equatable", "sharedInstance"]
+- !private ["Ps9Equatable", "suspendAllTask"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "timecountDown"]
+- !private ["Ps9Equatable", "titleLabel"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Int"]
+- !private ["Ps8Hashable", "TimeCountDownManager"]
+- !private ["Ps8Hashable", "cancelAllTask"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isEnabled"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "scheduledCountDownWith"]
+- !private ["Ps8Hashable", "sharedInstance"]
+- !private ["Ps8Hashable", "suspendAllTask"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "timecountDown"]
+- !private ["Ps8Hashable", "titleLabel"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "Int"]
+- !private ["PSo8NSCoding", "TimeCountDownManager"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEnabled"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "timecountDown"]
+- !private ["PSo8NSCoding", "titleLabel"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
+- !private ["PSo26NSExtensionRequestHandling", "TimeCountDownManager"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "timecountDown"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "TimeCountDownManager"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "cancelAllTask"]
+- ["CSo8NSObject", "continueTIme"]
+- ["CSo8NSObject", "countDown"]
+- ["CSo8NSObject", "countDown2"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isEnabled"]
+- ["CSo8NSObject", "pause"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "scheduledCountDownWith"]
+- !private ["CSo8NSObject", "sharedInstance"]
+- ["CSo8NSObject", "stop"]
+- !private ["CSo8NSObject", "suspendAllTask"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "timecountDown"]
+- !private ["CSo8NSObject", "titleLabel"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Int"]
+- !private ["PSo16NSObjectProtocol", "TimeCountDownManager"]
+- !private ["PSo16NSObjectProtocol", "cancelAllTask"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isEnabled"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "scheduledCountDownWith"]
+- !private ["PSo16NSObjectProtocol", "sharedInstance"]
+- !private ["PSo16NSObjectProtocol", "suspendAllTask"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "timecountDown"]
+- !private ["PSo16NSObjectProtocol", "titleLabel"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- ["C16TImeCountingDown18TestViewController", "AnyObject"]
+- !private ["C16TImeCountingDown18TestViewController", "Int"]
+- !private ["C16TImeCountingDown18TestViewController", "TimeCountDownManager"]
+- ["C16TImeCountingDown18TestViewController", "UIButton"]
+- ["C16TImeCountingDown18TestViewController", "continueTIme"]
+- ["C16TImeCountingDown18TestViewController", "countDown"]
+- ["C16TImeCountingDown18TestViewController", "countDown2"]
+- ["C16TImeCountingDown18TestViewController", "deinit"]
+- ["C16TImeCountingDown18TestViewController", "didReceiveMemoryWarning"]
+- ["C16TImeCountingDown18TestViewController", "init"]
+- ["C16TImeCountingDown18TestViewController", "pause"]
+- !private ["C16TImeCountingDown18TestViewController", "print"]
+- ["C16TImeCountingDown18TestViewController", "stop"]
+- ["C16TImeCountingDown18TestViewController", "timecountDown"]
+- ["C16TImeCountingDown18TestViewController", "viewDidLoad"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "cancelAllTask"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "scheduledCountDownWith"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "sharedInstance"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "suspendAllTask"]
+- !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- !private ["PSo12UIAppearance", "isEnabled"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
+- !private ["PSo21UIAppearanceContainer", "TimeCountDownManager"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isEnabled"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "timecountDown"]
+- !private ["PSo21UIAppearanceContainer", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "isEnabled"]
+- !private ["CSo8UIButton", "titleLabel"]
+- !private ["PSo18UIContentContainer", "Int"]
+- !private ["PSo18UIContentContainer", "TimeCountDownManager"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "timecountDown"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "isEnabled"]
+- !private ["CSo9UIControl", "titleLabel"]
+- !private ["PSo17UICoordinateSpace", "isEnabled"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleLabel"]
+- !private ["PSo13UIDynamicItem", "isEnabled"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
+- !private ["PSo18UIFocusEnvironment", "TimeCountDownManager"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isEnabled"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "timecountDown"]
+- !private ["PSo18UIFocusEnvironment", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "isEnabled"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "titleLabel"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "TimeCountDownManager"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "continueTIme"]
+- ["CSo11UIResponder", "countDown"]
+- ["CSo11UIResponder", "countDown2"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isEnabled"]
+- ["CSo11UIResponder", "pause"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "stop"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "timecountDown"]
+- !private ["CSo11UIResponder", "titleLabel"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "Int"]
+- !private ["PSo30UIResponderStandardEditActions", "TimeCountDownManager"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "timecountDown"]
+- !private ["PSo30UIResponderStandardEditActions", "titleLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "Int"]
+- !private ["PSo16UIStateRestoring", "TimeCountDownManager"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "timecountDown"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Int"]
+- !private ["PSo18UITraitEnvironment", "TimeCountDownManager"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isEnabled"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "timecountDown"]
+- !private ["PSo18UITraitEnvironment", "titleLabel"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "isEnabled"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleLabel"]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "TimeCountDownManager"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "continueTIme"]
+- ["CSo16UIViewController", "countDown"]
+- ["CSo16UIViewController", "countDown2"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "pause"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "stop"]
+- ["CSo16UIViewController", "timecountDown"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Int"]
+- !private ["Ps9_Hashable", "TimeCountDownManager"]
+- !private ["Ps9_Hashable", "cancelAllTask"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isEnabled"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "scheduledCountDownWith"]
+- !private ["Ps9_Hashable", "sharedInstance"]
+- !private ["Ps9_Hashable", "suspendAllTask"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "timecountDown"]
+- !private ["Ps9_Hashable", "titleLabel"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- "C16TImeCountingDown18TestViewController"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "C16TImeCountingDown20TimeCountDownManager"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "c6ed8badee2f39c79c4f037d8874a59e"
