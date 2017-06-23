@@ -15,7 +15,7 @@ typealias TimeFinishedBlock = (_ timeInterval: TimeInterval) -> Void
 
 class TimeCountDownManager: NSObject {
   // 单行单利
-  static let sharedInstance = TimeCountDownManager()
+  static let manager = TimeCountDownManager()
   
   var pool: OperationQueue
   
@@ -125,12 +125,14 @@ class TimeCountDownTask: Operation {
       if self.isCancelled {
         return
       }
-      leftTimeInterval -= 1
       DispatchQueue.main.async(execute: {
+//        printLog("------------------")
         if self.countingDownBlcok != nil {
           self.countingDownBlcok!(self.leftTimeInterval)
         }
+        self.leftTimeInterval -= 1
       })
+//      printLog("###################")
       Thread.sleep(forTimeInterval: 1)
     }
     
@@ -155,7 +157,7 @@ public func printLog<T>(_ message: T,
                      method: String = #function,
                      line: Int = #line)
 {
-  #if DEBUG
+//  #if DEBUG
     print("\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
-  #endif
+//  #endif
 }

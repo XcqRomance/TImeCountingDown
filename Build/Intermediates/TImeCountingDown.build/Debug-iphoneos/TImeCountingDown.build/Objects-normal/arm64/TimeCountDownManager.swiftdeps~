@@ -1,9 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "TimeCountDownManager"
 - "TimeCountingDownTaskBlock"
 - "TimeFinishedBlock"
+- "TimeCountDownManager"
 - "TimeCountDownTask"
+- "printLog"
 provides-nominal:
 - "C16TImeCountingDown20TimeCountDownManager"
 - "C16TImeCountingDown17TimeCountDownTask"
@@ -12,13 +13,14 @@ provides-member:
 - ["C16TImeCountingDown17TimeCountDownTask", ""]
 provides-dynamic-lookup:
 - "cancelAllTask"
+- "cancelTask"
 - "countingDownBlcok"
 - "finishedBlcok"
 - "leftTimeInterval"
 - "main"
+- "manager"
 - "pool"
 - "scheduledCountDownWith"
-- "sharedInstance"
 - "suspendAllTask"
 - "taskIdentifier"
 depends-top-level:
@@ -26,12 +28,15 @@ depends-top-level:
 - !private "-="
 - !private "=="
 - !private ">"
+- !private "??"
 - "AssignmentPrecedence"
 - !private "Bool"
 - !private "BooleanLiteralType"
-- !private "CastingPrecedence"
+- "CastingPrecedence"
 - !private "DispatchQueue"
+- "Int"
 - "NSObject"
+- !private "NSString"
 - "Operation"
 - "OperationQueue"
 - "String"
@@ -45,19 +50,22 @@ depends-top-level:
 - !private "UIApplication"
 - "UIBackgroundTaskIdentifier"
 - !private "UIBackgroundTaskInvalid"
+- !private "UnicodeScalarType"
 - "Void"
 - !private "print"
-- !private "shareInstance"
+- "printLog"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "OperationQueue"]
 - !private ["Ps9AnyObject", "Thread"]
+- ["Ps9AnyObject", "TimeCountDownManager"]
 - !private ["Ps9AnyObject", "TimeCountDownTask"]
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIBackgroundTaskInvalid"]
 - !private ["Ps9AnyObject", "addOperation"]
 - !private ["Ps9AnyObject", "async"]
 - !private ["Ps9AnyObject", "beginBackgroundTask"]
+- !private ["Ps9AnyObject", "cancel"]
 - !private ["Ps9AnyObject", "cancelAllOperations"]
 - !private ["Ps9AnyObject", "coundownTaskExistWith"]
 - !private ["Ps9AnyObject", "countingDownBlcok"]
@@ -67,13 +75,13 @@ depends-member:
 - !private ["Ps9AnyObject", "isCancelled"]
 - !private ["Ps9AnyObject", "isExecuting"]
 - !private ["Ps9AnyObject", "isSuspended"]
+- !private ["Ps9AnyObject", "lastPathComponent"]
 - !private ["Ps9AnyObject", "leftTimeInterval"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "operations"]
 - !private ["Ps9AnyObject", "pool"]
-- !private ["Ps9AnyObject", "print"]
-- !private ["Ps9AnyObject", "shareInstance"]
+- !private ["Ps9AnyObject", "printLog"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "sleep"]
 - !private ["Ps9AnyObject", "taskIdentifier"]
@@ -84,12 +92,14 @@ depends-member:
 - !private ["Ps7CVarArg", "DispatchQueue"]
 - !private ["Ps7CVarArg", "OperationQueue"]
 - !private ["Ps7CVarArg", "Thread"]
+- ["Ps7CVarArg", "TimeCountDownManager"]
 - !private ["Ps7CVarArg", "TimeCountDownTask"]
 - !private ["Ps7CVarArg", "UIApplication"]
 - !private ["Ps7CVarArg", "UIBackgroundTaskInvalid"]
 - !private ["Ps7CVarArg", "addOperation"]
 - !private ["Ps7CVarArg", "async"]
 - !private ["Ps7CVarArg", "beginBackgroundTask"]
+- !private ["Ps7CVarArg", "cancel"]
 - !private ["Ps7CVarArg", "cancelAllOperations"]
 - !private ["Ps7CVarArg", "coundownTaskExistWith"]
 - !private ["Ps7CVarArg", "countingDownBlcok"]
@@ -100,13 +110,13 @@ depends-member:
 - !private ["Ps7CVarArg", "isCancelled"]
 - !private ["Ps7CVarArg", "isExecuting"]
 - !private ["Ps7CVarArg", "isSuspended"]
+- !private ["Ps7CVarArg", "lastPathComponent"]
 - !private ["Ps7CVarArg", "leftTimeInterval"]
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "name"]
 - !private ["Ps7CVarArg", "operations"]
 - !private ["Ps7CVarArg", "pool"]
-- !private ["Ps7CVarArg", "print"]
-- !private ["Ps7CVarArg", "shareInstance"]
+- !private ["Ps7CVarArg", "printLog"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "sleep"]
 - !private ["Ps7CVarArg", "taskIdentifier"]
@@ -116,12 +126,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "OperationQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "Thread"]
+- ["Ps28CustomDebugStringConvertible", "TimeCountDownManager"]
 - !private ["Ps28CustomDebugStringConvertible", "TimeCountDownTask"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBackgroundTaskInvalid"]
 - !private ["Ps28CustomDebugStringConvertible", "addOperation"]
 - !private ["Ps28CustomDebugStringConvertible", "async"]
 - !private ["Ps28CustomDebugStringConvertible", "beginBackgroundTask"]
+- !private ["Ps28CustomDebugStringConvertible", "cancel"]
 - !private ["Ps28CustomDebugStringConvertible", "cancelAllOperations"]
 - !private ["Ps28CustomDebugStringConvertible", "coundownTaskExistWith"]
 - !private ["Ps28CustomDebugStringConvertible", "countingDownBlcok"]
@@ -132,25 +144,27 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "isCancelled"]
 - !private ["Ps28CustomDebugStringConvertible", "isExecuting"]
 - !private ["Ps28CustomDebugStringConvertible", "isSuspended"]
+- !private ["Ps28CustomDebugStringConvertible", "lastPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "leftTimeInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "name"]
 - !private ["Ps28CustomDebugStringConvertible", "operations"]
 - !private ["Ps28CustomDebugStringConvertible", "pool"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
-- !private ["Ps28CustomDebugStringConvertible", "shareInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "printLog"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "sleep"]
 - !private ["Ps28CustomDebugStringConvertible", "taskIdentifier"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "lastPathComponent"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "enumerated"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
 - !private ["Ps23CustomStringConvertible", "OperationQueue"]
 - !private ["Ps23CustomStringConvertible", "Thread"]
+- ["Ps23CustomStringConvertible", "TimeCountDownManager"]
 - !private ["Ps23CustomStringConvertible", "TimeCountDownTask"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "UIBackgroundTaskInvalid"]
@@ -158,6 +172,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addOperation"]
 - !private ["Ps23CustomStringConvertible", "async"]
 - !private ["Ps23CustomStringConvertible", "beginBackgroundTask"]
+- !private ["Ps23CustomStringConvertible", "cancel"]
 - !private ["Ps23CustomStringConvertible", "cancelAllOperations"]
 - !private ["Ps23CustomStringConvertible", "coundownTaskExistWith"]
 - !private ["Ps23CustomStringConvertible", "countingDownBlcok"]
@@ -168,13 +183,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isCancelled"]
 - !private ["Ps23CustomStringConvertible", "isExecuting"]
 - !private ["Ps23CustomStringConvertible", "isSuspended"]
+- !private ["Ps23CustomStringConvertible", "lastPathComponent"]
 - !private ["Ps23CustomStringConvertible", "leftTimeInterval"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "name"]
 - !private ["Ps23CustomStringConvertible", "operations"]
 - !private ["Ps23CustomStringConvertible", "pool"]
-- !private ["Ps23CustomStringConvertible", "print"]
-- !private ["Ps23CustomStringConvertible", "shareInstance"]
+- !private ["Ps23CustomStringConvertible", "printLog"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "sleep"]
 - !private ["Ps23CustomStringConvertible", "taskIdentifier"]
@@ -186,6 +201,7 @@ depends-member:
 - !private ["Ps9Equatable", "DispatchQueue"]
 - !private ["Ps9Equatable", "OperationQueue"]
 - !private ["Ps9Equatable", "Thread"]
+- ["Ps9Equatable", "TimeCountDownManager"]
 - !private ["Ps9Equatable", "TimeCountDownTask"]
 - !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UIBackgroundTaskInvalid"]
@@ -193,6 +209,7 @@ depends-member:
 - !private ["Ps9Equatable", "addOperation"]
 - !private ["Ps9Equatable", "async"]
 - !private ["Ps9Equatable", "beginBackgroundTask"]
+- !private ["Ps9Equatable", "cancel"]
 - !private ["Ps9Equatable", "cancelAllOperations"]
 - !private ["Ps9Equatable", "coundownTaskExistWith"]
 - !private ["Ps9Equatable", "countingDownBlcok"]
@@ -202,13 +219,13 @@ depends-member:
 - !private ["Ps9Equatable", "isCancelled"]
 - !private ["Ps9Equatable", "isExecuting"]
 - !private ["Ps9Equatable", "isSuspended"]
+- !private ["Ps9Equatable", "lastPathComponent"]
 - !private ["Ps9Equatable", "leftTimeInterval"]
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "name"]
 - !private ["Ps9Equatable", "operations"]
 - !private ["Ps9Equatable", "pool"]
-- !private ["Ps9Equatable", "print"]
-- !private ["Ps9Equatable", "shareInstance"]
+- !private ["Ps9Equatable", "printLog"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "sleep"]
 - !private ["Ps9Equatable", "taskIdentifier"]
@@ -216,11 +233,15 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "enumerated"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lastPathComponent"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "lastPathComponent"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "lastPathComponent"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "OperationQueue"]
 - !private ["Ps8Hashable", "Thread"]
+- ["Ps8Hashable", "TimeCountDownManager"]
 - !private ["Ps8Hashable", "TimeCountDownTask"]
 - !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UIBackgroundTaskInvalid"]
@@ -228,6 +249,7 @@ depends-member:
 - !private ["Ps8Hashable", "addOperation"]
 - !private ["Ps8Hashable", "async"]
 - !private ["Ps8Hashable", "beginBackgroundTask"]
+- !private ["Ps8Hashable", "cancel"]
 - !private ["Ps8Hashable", "cancelAllOperations"]
 - !private ["Ps8Hashable", "coundownTaskExistWith"]
 - !private ["Ps8Hashable", "countingDownBlcok"]
@@ -237,13 +259,13 @@ depends-member:
 - !private ["Ps8Hashable", "isCancelled"]
 - !private ["Ps8Hashable", "isExecuting"]
 - !private ["Ps8Hashable", "isSuspended"]
+- !private ["Ps8Hashable", "lastPathComponent"]
 - !private ["Ps8Hashable", "leftTimeInterval"]
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "name"]
 - !private ["Ps8Hashable", "operations"]
 - !private ["Ps8Hashable", "pool"]
-- !private ["Ps8Hashable", "print"]
-- !private ["Ps8Hashable", "shareInstance"]
+- !private ["Ps8Hashable", "printLog"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "sleep"]
 - !private ["Ps8Hashable", "taskIdentifier"]
@@ -253,8 +275,11 @@ depends-member:
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "enumerated"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lastPathComponent"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lastPathComponent"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "lastPathComponent"]
 - !private ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "DispatchQueue"]
 - ["CSo8NSObject", "OperationQueue"]
@@ -271,8 +296,10 @@ depends-member:
 - !private ["CSo8NSObject", "addOperation"]
 - !private ["CSo8NSObject", "async"]
 - !private ["CSo8NSObject", "beginBackgroundTask"]
+- !private ["CSo8NSObject", "cancel"]
 - !private ["CSo8NSObject", "cancelAllOperations"]
 - ["CSo8NSObject", "cancelAllTask"]
+- ["CSo8NSObject", "cancelTask"]
 - ["CSo8NSObject", "coundownTaskExistWith"]
 - ["CSo8NSObject", "countingDownBlcok"]
 - !private ["CSo8NSObject", "endBackgroundTask"]
@@ -281,16 +308,16 @@ depends-member:
 - !private ["CSo8NSObject", "isCancelled"]
 - !private ["CSo8NSObject", "isExecuting"]
 - !private ["CSo8NSObject", "isSuspended"]
+- !private ["CSo8NSObject", "lastPathComponent"]
 - ["CSo8NSObject", "leftTimeInterval"]
 - ["CSo8NSObject", "main"]
+- ["CSo8NSObject", "manager"]
 - !private ["CSo8NSObject", "name"]
 - !private ["CSo8NSObject", "operations"]
 - ["CSo8NSObject", "pool"]
-- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "printLog"]
 - ["CSo8NSObject", "scheduledCountDownWith"]
-- !private ["CSo8NSObject", "shareInstance"]
 - !private ["CSo8NSObject", "shared"]
-- ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "sleep"]
 - ["CSo8NSObject", "suspendAllTask"]
 - ["CSo8NSObject", "taskIdentifier"]
@@ -298,12 +325,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "OperationQueue"]
 - !private ["PSo16NSObjectProtocol", "Thread"]
+- ["PSo16NSObjectProtocol", "TimeCountDownManager"]
 - !private ["PSo16NSObjectProtocol", "TimeCountDownTask"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIBackgroundTaskInvalid"]
 - !private ["PSo16NSObjectProtocol", "addOperation"]
 - !private ["PSo16NSObjectProtocol", "async"]
 - !private ["PSo16NSObjectProtocol", "beginBackgroundTask"]
+- !private ["PSo16NSObjectProtocol", "cancel"]
 - !private ["PSo16NSObjectProtocol", "cancelAllOperations"]
 - !private ["PSo16NSObjectProtocol", "coundownTaskExistWith"]
 - !private ["PSo16NSObjectProtocol", "countingDownBlcok"]
@@ -313,19 +342,21 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isCancelled"]
 - !private ["PSo16NSObjectProtocol", "isExecuting"]
 - !private ["PSo16NSObjectProtocol", "isSuspended"]
+- !private ["PSo16NSObjectProtocol", "lastPathComponent"]
 - !private ["PSo16NSObjectProtocol", "leftTimeInterval"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "name"]
 - !private ["PSo16NSObjectProtocol", "operations"]
 - !private ["PSo16NSObjectProtocol", "pool"]
-- !private ["PSo16NSObjectProtocol", "print"]
-- !private ["PSo16NSObjectProtocol", "shareInstance"]
+- !private ["PSo16NSObjectProtocol", "printLog"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "sleep"]
 - !private ["PSo16NSObjectProtocol", "taskIdentifier"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lastPathComponent"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "lastPathComponent"]
 - !private ["CSo9OS_object", "async"]
 - !private ["CSo9OS_object", "main"]
 - !private ["CSo9Operation", "DispatchQueue"]
@@ -336,6 +367,7 @@ depends-member:
 - !private ["CSo9Operation", "UIApplication"]
 - ["CSo9Operation", "UIBackgroundTaskIdentifier"]
 - !private ["CSo9Operation", "UIBackgroundTaskInvalid"]
+- !private ["CSo9Operation", "cancel"]
 - ["CSo9Operation", "countingDownBlcok"]
 - ["CSo9Operation", "finishedBlcok"]
 - ["CSo9Operation", "init"]
@@ -344,7 +376,7 @@ depends-member:
 - ["CSo9Operation", "leftTimeInterval"]
 - ["CSo9Operation", "main"]
 - !private ["CSo9Operation", "name"]
-- !private ["CSo9Operation", "print"]
+- !private ["CSo9Operation", "printLog"]
 - ["CSo9Operation", "taskIdentifier"]
 - ["CSo9Operation", ""]
 - !private ["CSo14OperationQueue", "addOperation"]
@@ -367,14 +399,14 @@ depends-member:
 - ["C16TImeCountingDown20TimeCountDownManager", "TimeCountingDownTaskBlock"]
 - ["C16TImeCountingDown20TimeCountDownManager", "TimeInterval"]
 - ["C16TImeCountingDown20TimeCountDownManager", "cancelAllTask"]
+- ["C16TImeCountingDown20TimeCountDownManager", "cancelTask"]
 - !private ["C16TImeCountingDown20TimeCountDownManager", "coundownTaskExistWith"]
 - ["C16TImeCountingDown20TimeCountDownManager", "deinit"]
 - ["C16TImeCountingDown20TimeCountDownManager", "init"]
+- ["C16TImeCountingDown20TimeCountDownManager", "manager"]
 - ["C16TImeCountingDown20TimeCountDownManager", "pool"]
-- !private ["C16TImeCountingDown20TimeCountDownManager", "print"]
+- !private ["C16TImeCountingDown20TimeCountDownManager", "printLog"]
 - ["C16TImeCountingDown20TimeCountDownManager", "scheduledCountDownWith"]
-- !private ["C16TImeCountingDown20TimeCountDownManager", "shareInstance"]
-- ["C16TImeCountingDown20TimeCountDownManager", "sharedInstance"]
 - ["C16TImeCountingDown20TimeCountDownManager", "suspendAllTask"]
 - !private ["C16TImeCountingDown17TimeCountDownTask", "DispatchQueue"]
 - !private ["C16TImeCountingDown17TimeCountDownTask", "Thread"]
@@ -384,6 +416,7 @@ depends-member:
 - !private ["C16TImeCountingDown17TimeCountDownTask", "UIApplication"]
 - ["C16TImeCountingDown17TimeCountDownTask", "UIBackgroundTaskIdentifier"]
 - !private ["C16TImeCountingDown17TimeCountDownTask", "UIBackgroundTaskInvalid"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "cancel"]
 - ["C16TImeCountingDown17TimeCountDownTask", "countingDownBlcok"]
 - ["C16TImeCountingDown17TimeCountDownTask", "deinit"]
 - ["C16TImeCountingDown17TimeCountDownTask", "finishedBlcok"]
@@ -393,7 +426,7 @@ depends-member:
 - ["C16TImeCountingDown17TimeCountDownTask", "leftTimeInterval"]
 - ["C16TImeCountingDown17TimeCountDownTask", "main"]
 - !private ["C16TImeCountingDown17TimeCountDownTask", "name"]
-- !private ["C16TImeCountingDown17TimeCountDownTask", "print"]
+- !private ["C16TImeCountingDown17TimeCountDownTask", "printLog"]
 - ["C16TImeCountingDown17TimeCountDownTask", "taskIdentifier"]
 - !private ["CSo13UIApplication", "beginBackgroundTask"]
 - !private ["CSo13UIApplication", "endBackgroundTask"]
@@ -414,9 +447,11 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "lastPathComponent"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "OperationQueue"]
 - !private ["Ps9_Hashable", "Thread"]
+- ["Ps9_Hashable", "TimeCountDownManager"]
 - !private ["Ps9_Hashable", "TimeCountDownTask"]
 - !private ["Ps9_Hashable", "UIApplication"]
 - !private ["Ps9_Hashable", "UIBackgroundTaskInvalid"]
@@ -424,6 +459,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addOperation"]
 - !private ["Ps9_Hashable", "async"]
 - !private ["Ps9_Hashable", "beginBackgroundTask"]
+- !private ["Ps9_Hashable", "cancel"]
 - !private ["Ps9_Hashable", "cancelAllOperations"]
 - !private ["Ps9_Hashable", "coundownTaskExistWith"]
 - !private ["Ps9_Hashable", "countingDownBlcok"]
@@ -433,13 +469,13 @@ depends-member:
 - !private ["Ps9_Hashable", "isCancelled"]
 - !private ["Ps9_Hashable", "isExecuting"]
 - !private ["Ps9_Hashable", "isSuspended"]
+- !private ["Ps9_Hashable", "lastPathComponent"]
 - !private ["Ps9_Hashable", "leftTimeInterval"]
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "name"]
 - !private ["Ps9_Hashable", "operations"]
 - !private ["Ps9_Hashable", "pool"]
-- !private ["Ps9_Hashable", "print"]
-- !private ["Ps9_Hashable", "shareInstance"]
+- !private ["Ps9_Hashable", "printLog"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "sleep"]
 - !private ["Ps9_Hashable", "taskIdentifier"]
@@ -534,4 +570,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "61918d0c2cba3cb7d5a5b11d8dda1604"
+interface-hash: "fb695d490da39516fa90f2afc5b2c8cf"

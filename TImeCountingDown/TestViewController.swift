@@ -23,7 +23,8 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func countDown(_ sender: UIButton) {
-        TimeCountDownManager.sharedInstance.scheduledCountDownWith("button1", timeInteval: 60, countingDown: { (timeInterval) in
+        TimeCountDownManager.manager.scheduledCountDownWith("button1", timeInteval: 10, countingDown: { (timeInterval) in
+            printLog(timeInterval)
             sender.titleLabel?.text = "剩余\(Int(timeInterval))s"
             sender.isEnabled = false
             }) { (timeInterval) in
@@ -32,7 +33,7 @@ class TestViewController: UIViewController {
         }
     }
     @IBAction func countDown2(_ sender: UIButton) {
-        TimeCountDownManager.sharedInstance.scheduledCountDownWith("button2", timeInteval: 60, countingDown: { (timeInterval) in
+        TimeCountDownManager.manager.scheduledCountDownWith("button2", timeInteval: 60, countingDown: { (timeInterval) in
             sender.titleLabel?.text = "剩余\(Int(timeInterval))s"
             sender.isEnabled = false
         }) { (timeInterval) in
@@ -43,11 +44,11 @@ class TestViewController: UIViewController {
 
     @IBAction func stop(_ sender: AnyObject) {
         timecountDown.titleLabel?.text = "点击开始倒计时"
-        TimeCountDownManager.sharedInstance.cancelAllTask()
+        TimeCountDownManager.manager.cancelAllTask()
     }
 
     @IBAction func continueTIme(_ sender: UIButton) {
-        TimeCountDownManager.sharedInstance.scheduledCountDownWith("heh", timeInteval: 60, countingDown: { (timeInterval) in
+        TimeCountDownManager.manager.scheduledCountDownWith("button1", timeInteval: 60, countingDown: { (timeInterval) in
             self.timecountDown.titleLabel?.text = "剩余\(Int(timeInterval))s"
             self.timecountDown.isEnabled = false
         }) { (timeInterval) in
@@ -60,7 +61,7 @@ class TestViewController: UIViewController {
 //        if TimeCountDownManager.sharedInstance.pool.suspended {
 //            TimeCountDownManager.sharedInstance.pool.suspended = false
 //        } else {
-            TimeCountDownManager.sharedInstance.suspendAllTask()
+            TimeCountDownManager.manager.suspendAllTask()
 //        }
     }
     

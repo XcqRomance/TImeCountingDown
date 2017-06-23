@@ -176,8 +176,8 @@ SWIFT_CLASS("_TtC16TImeCountingDown18TestViewController")
 
 SWIFT_CLASS("_TtC16TImeCountingDown20TimeCountDownManager")
 @interface TimeCountDownManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TimeCountDownManager * _Nonnull sharedInstance;)
-+ (TimeCountDownManager * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TimeCountDownManager * _Nonnull manager;)
++ (TimeCountDownManager * _Nonnull)manager SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NSOperationQueue * _Nonnull pool;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// 开始倒计时，如果倒计时管理器里具有相同的key，则直接开始回调。

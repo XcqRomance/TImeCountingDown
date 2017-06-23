@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Igo-CA-aYR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Igo-CA-aYR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,9 +17,9 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="HdT-eh-FQi">
                         <barButtonItem key="rightBarButtonItem" title="push" id="KRB-p2-L92">
@@ -39,11 +42,11 @@
                         <viewControllerLayoutGuide type="bottom" id="R9M-bv-rpC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eOy-9n-hEN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTi-lc-uJC">
-                                <rect key="frame" x="250" y="283" width="100" height="34"/>
+                                <rect key="frame" x="57.5" y="316.5" width="100" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="WTy-xs-POH"/>
                                 </constraints>
@@ -53,30 +56,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7B-zs-Vu1">
-                                <rect key="frame" x="285" y="362" width="31" height="30"/>
+                                <rect key="frame" x="172" y="395.5" width="31" height="30"/>
                                 <state key="normal" title="stop"/>
                                 <connections>
                                     <action selector="stop:" destination="U7k-JS-vVY" eventType="touchUpInside" id="Y3h-6k-1KT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYr-pk-TNQ">
-                                <rect key="frame" x="270" y="415" width="60" height="30"/>
+                                <rect key="frame" x="157.5" y="448.5" width="60" height="30"/>
                                 <state key="normal" title="continue"/>
                                 <connections>
                                     <action selector="continueTIme:" destination="U7k-JS-vVY" eventType="touchUpInside" id="Et2-39-HkO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQV-so-igZ">
-                                <rect key="frame" x="279" y="472" width="42" height="30"/>
+                                <rect key="frame" x="166.5" y="505.5" width="42" height="30"/>
                                 <state key="normal" title="pause"/>
                                 <connections>
                                     <action selector="pause:" destination="U7k-JS-vVY" eventType="touchUpInside" id="9Gb-zc-ym5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPR-TL-IVc">
-                                <rect key="frame" x="404" y="283" width="100" height="34"/>
+                                <rect key="frame" x="211.5" y="316.5" width="110" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ql8-sK-pOe"/>
+                                    <constraint firstAttribute="width" constant="110" id="Ql8-sK-pOe"/>
                                 </constraints>
                                 <state key="normal" title="倒计时2"/>
                                 <connections>
@@ -84,11 +87,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qYr-pk-TNQ" firstAttribute="centerX" secondItem="eOy-9n-hEN" secondAttribute="centerX" id="Chf-9Q-HfW"/>
                             <constraint firstItem="cQV-so-igZ" firstAttribute="centerX" secondItem="eOy-9n-hEN" secondAttribute="centerX" id="DMR-SQ-oL6"/>
-                            <constraint firstItem="GTi-lc-uJC" firstAttribute="centerX" secondItem="eOy-9n-hEN" secondAttribute="centerX" id="JN9-RA-gy3"/>
+                            <constraint firstItem="GTi-lc-uJC" firstAttribute="centerX" secondItem="eOy-9n-hEN" secondAttribute="centerX" constant="-80" id="JN9-RA-gy3"/>
                             <constraint firstItem="hPR-TL-IVc" firstAttribute="centerY" secondItem="eOy-9n-hEN" secondAttribute="centerY" id="Paw-Dj-BSE"/>
                             <constraint firstItem="c7B-zs-Vu1" firstAttribute="top" secondItem="GTi-lc-uJC" secondAttribute="bottom" constant="45" id="Uvq-Oc-MaO"/>
                             <constraint firstItem="hPR-TL-IVc" firstAttribute="leading" secondItem="GTi-lc-uJC" secondAttribute="trailing" constant="54" id="XcE-RQ-Z1S"/>

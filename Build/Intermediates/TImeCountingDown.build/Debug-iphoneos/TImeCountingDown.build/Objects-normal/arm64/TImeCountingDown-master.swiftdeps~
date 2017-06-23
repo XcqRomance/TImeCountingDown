@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "0ee3de8fa04997f443b71dec8825938d"
-build_time: [551418635, 165209000]
+build_time: [551494970, 667288000]
 inputs:
   "/Users/xcqromance/Desktop/GitHubRemote/TImeCountingDown/TImeCountingDown/ViewController.swift": [541045592, 0]
   "/Users/xcqromance/Desktop/GitHubRemote/TImeCountingDown/TImeCountingDown/AppDelegate.swift": [541045592, 0]
-  "/Users/xcqromance/Desktop/GitHubRemote/TImeCountingDown/TImeCountingDown/TestViewController.swift": [541045592, 0]
-  "/Users/xcqromance/Desktop/GitHubRemote/TImeCountingDown/TImeCountingDown/TimeCountDownManager.swift": [541045592, 0]
+  "/Users/xcqromance/Desktop/GitHubRemote/TImeCountingDown/TImeCountingDown/TestViewController.swift": [551494656, 0]
+  "/Users/xcqromance/Desktop/GitHubRemote/TImeCountingDown/TImeCountingDown/TimeCountDownManager.swift": [551494969, 0]

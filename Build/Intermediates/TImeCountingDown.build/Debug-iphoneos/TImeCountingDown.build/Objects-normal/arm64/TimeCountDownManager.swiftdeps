@@ -18,9 +18,9 @@ provides-dynamic-lookup:
 - "finishedBlcok"
 - "leftTimeInterval"
 - "main"
+- "manager"
 - "pool"
 - "scheduledCountDownWith"
-- "sharedInstance"
 - "suspendAllTask"
 - "taskIdentifier"
 depends-top-level:
@@ -36,6 +36,7 @@ depends-top-level:
 - !private "DispatchQueue"
 - "Int"
 - "NSObject"
+- !private "NSString"
 - "Operation"
 - "OperationQueue"
 - "String"
@@ -49,7 +50,9 @@ depends-top-level:
 - !private "UIApplication"
 - "UIBackgroundTaskIdentifier"
 - !private "UIBackgroundTaskInvalid"
+- !private "UnicodeScalarType"
 - "Void"
+- !private "print"
 - "printLog"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -72,6 +75,7 @@ depends-member:
 - !private ["Ps9AnyObject", "isCancelled"]
 - !private ["Ps9AnyObject", "isExecuting"]
 - !private ["Ps9AnyObject", "isSuspended"]
+- !private ["Ps9AnyObject", "lastPathComponent"]
 - !private ["Ps9AnyObject", "leftTimeInterval"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "name"]
@@ -106,6 +110,7 @@ depends-member:
 - !private ["Ps7CVarArg", "isCancelled"]
 - !private ["Ps7CVarArg", "isExecuting"]
 - !private ["Ps7CVarArg", "isSuspended"]
+- !private ["Ps7CVarArg", "lastPathComponent"]
 - !private ["Ps7CVarArg", "leftTimeInterval"]
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "name"]
@@ -139,6 +144,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "isCancelled"]
 - !private ["Ps28CustomDebugStringConvertible", "isExecuting"]
 - !private ["Ps28CustomDebugStringConvertible", "isSuspended"]
+- !private ["Ps28CustomDebugStringConvertible", "lastPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "leftTimeInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "name"]
@@ -151,6 +157,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "lastPathComponent"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "enumerated"]
 - !private ["Ps17CustomReflectable", "init"]
@@ -176,6 +183,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isCancelled"]
 - !private ["Ps23CustomStringConvertible", "isExecuting"]
 - !private ["Ps23CustomStringConvertible", "isSuspended"]
+- !private ["Ps23CustomStringConvertible", "lastPathComponent"]
 - !private ["Ps23CustomStringConvertible", "leftTimeInterval"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "name"]
@@ -211,6 +219,7 @@ depends-member:
 - !private ["Ps9Equatable", "isCancelled"]
 - !private ["Ps9Equatable", "isExecuting"]
 - !private ["Ps9Equatable", "isSuspended"]
+- !private ["Ps9Equatable", "lastPathComponent"]
 - !private ["Ps9Equatable", "leftTimeInterval"]
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "name"]
@@ -224,8 +233,11 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "enumerated"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lastPathComponent"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "lastPathComponent"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "lastPathComponent"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "OperationQueue"]
 - !private ["Ps8Hashable", "Thread"]
@@ -247,6 +259,7 @@ depends-member:
 - !private ["Ps8Hashable", "isCancelled"]
 - !private ["Ps8Hashable", "isExecuting"]
 - !private ["Ps8Hashable", "isSuspended"]
+- !private ["Ps8Hashable", "lastPathComponent"]
 - !private ["Ps8Hashable", "leftTimeInterval"]
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "name"]
@@ -262,8 +275,11 @@ depends-member:
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "enumerated"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lastPathComponent"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lastPathComponent"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "lastPathComponent"]
 - !private ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "DispatchQueue"]
 - ["CSo8NSObject", "OperationQueue"]
@@ -292,15 +308,16 @@ depends-member:
 - !private ["CSo8NSObject", "isCancelled"]
 - !private ["CSo8NSObject", "isExecuting"]
 - !private ["CSo8NSObject", "isSuspended"]
+- !private ["CSo8NSObject", "lastPathComponent"]
 - ["CSo8NSObject", "leftTimeInterval"]
 - ["CSo8NSObject", "main"]
+- ["CSo8NSObject", "manager"]
 - !private ["CSo8NSObject", "name"]
 - !private ["CSo8NSObject", "operations"]
 - ["CSo8NSObject", "pool"]
 - !private ["CSo8NSObject", "printLog"]
 - ["CSo8NSObject", "scheduledCountDownWith"]
 - !private ["CSo8NSObject", "shared"]
-- ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "sleep"]
 - ["CSo8NSObject", "suspendAllTask"]
 - ["CSo8NSObject", "taskIdentifier"]
@@ -325,6 +342,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isCancelled"]
 - !private ["PSo16NSObjectProtocol", "isExecuting"]
 - !private ["PSo16NSObjectProtocol", "isSuspended"]
+- !private ["PSo16NSObjectProtocol", "lastPathComponent"]
 - !private ["PSo16NSObjectProtocol", "leftTimeInterval"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "name"]
@@ -336,7 +354,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "taskIdentifier"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lastPathComponent"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "lastPathComponent"]
 - !private ["CSo9OS_object", "async"]
 - !private ["CSo9OS_object", "main"]
 - !private ["CSo9Operation", "DispatchQueue"]
@@ -383,10 +403,10 @@ depends-member:
 - !private ["C16TImeCountingDown20TimeCountDownManager", "coundownTaskExistWith"]
 - ["C16TImeCountingDown20TimeCountDownManager", "deinit"]
 - ["C16TImeCountingDown20TimeCountDownManager", "init"]
+- ["C16TImeCountingDown20TimeCountDownManager", "manager"]
 - ["C16TImeCountingDown20TimeCountDownManager", "pool"]
 - !private ["C16TImeCountingDown20TimeCountDownManager", "printLog"]
 - ["C16TImeCountingDown20TimeCountDownManager", "scheduledCountDownWith"]
-- ["C16TImeCountingDown20TimeCountDownManager", "sharedInstance"]
 - ["C16TImeCountingDown20TimeCountDownManager", "suspendAllTask"]
 - !private ["C16TImeCountingDown17TimeCountDownTask", "DispatchQueue"]
 - !private ["C16TImeCountingDown17TimeCountDownTask", "Thread"]
@@ -427,6 +447,7 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "lastPathComponent"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "OperationQueue"]
 - !private ["Ps9_Hashable", "Thread"]
@@ -448,6 +469,7 @@ depends-member:
 - !private ["Ps9_Hashable", "isCancelled"]
 - !private ["Ps9_Hashable", "isExecuting"]
 - !private ["Ps9_Hashable", "isSuspended"]
+- !private ["Ps9_Hashable", "lastPathComponent"]
 - !private ["Ps9_Hashable", "leftTimeInterval"]
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "name"]
@@ -548,4 +570,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "597d11f72b4e6ece41e178e04e42945e"
+interface-hash: "fb695d490da39516fa90f2afc5b2c8cf"
