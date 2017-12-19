@@ -11,3 +11,6 @@ Swift实现的NSOperation倒计时
 3、能够取消所有的倒计时任务
 
 ![Demo Overview](https://github.com/XcqRomance/TImeCountingDown/blob/master/method.png)
+
+# 简书地址
+[iOS的使用Swift，NSOperation实现的倒计时](http://www.jianshu.com/p/210647c94eb2)
